@@ -1,0 +1,68 @@
+/* Imported Fonts */
+@font-face {
+    font-family: Roboto;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+}
+
+body{
+    display:flex;
+    justify-content: center;
+}
+
+/* Main Div - contains everything else */
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    min-height: 100vh;
+    background: rgb(223, 214, 217); /* Temp to see where flex box is */ 
+}
+
+
+#title {
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    text-align: center;
+    padding: 1vh;
+    width: 100%;
+    
+}
+
+
+
+
+
+
+/* NOT USED YET */
+#img-div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0); /* used to see where box is */
+    width: 100%;
+    max-height: 50%;
+    padding-bottom: 2%;
+}
+
+/* Image of Tribute Individual */
+#image {
+    margin: 2vh 2vh 0vh 2vh;
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+    
+}
+
+#img-caption{
+    margin: 0;
+    padding: 2vh 2vh 0.5vh 2vh;
+    color: white;
+}
+
+#tribute-info{
+    font-family: 'NotoSansJP', sans-serif;
+    margin-top: 0;
+    width: 95%;
+    text-indent:5%;
+}
