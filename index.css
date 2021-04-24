@@ -7,6 +7,11 @@
 body{
     display:flex;
     justify-content: center;
+    background-image: url(imgs/orangeECar.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Main Div - contains everything else */
@@ -16,7 +21,6 @@ body{
     align-items: center;
     width: 70vw;
     min-height: 100vh;
-    background: rgb(223, 214, 217); /* Temp to see where flex box is */ 
 }
 
 
@@ -24,45 +28,28 @@ body{
     font-family: 'Roboto', sans-serif;
     max-width: 100%;
     text-align: center;
-    padding: 1vh;
+    padding: 1vh 1vh 0vh 1vh;
+    margin-bottom: 1vh;
     width: 100%;
-    
+    color: white
 }
 
 
-
-
-
-
-/* NOT USED YET */
-#img-div {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(0, 0, 0); /* used to see where box is */
-    width: 100%;
-    max-height: 50%;
-    padding-bottom: 2%;
-}
-
-/* Image of Tribute Individual */
-#image {
-    margin: 2vh 2vh 0vh 2vh;
-    max-width: 50%;
-    height: auto;
-    object-fit: contain;
-    
-}
-
-#img-caption{
-    margin: 0;
-    padding: 2vh 2vh 0.5vh 2vh;
-    color: white;
-}
-
-#tribute-info{
-    font-family: 'NotoSansJP', sans-serif;
+#description {
+    font-family: 'Roboto', sans-serif;
     margin-top: 0;
-    width: 95%;
-    text-indent:5%;
+    color: white
+}
+
+#surveyContainer{
+    max-width: 75vw;
+    width: 50vw;
+    background-color: blue;
+}
+
+#survey-form{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: red;
 }
