@@ -1,20 +1,19 @@
 /* Imported Fonts */
-@font-face {
-    font-family: Roboto;
-    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-}
 
-body{
-    display:flex;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+body {
+    display: flex;
     justify-content: center;
-    background-image: url(imgs/orangeECar.jpg);
-    background-size: contain;
+    background-image: url(imgs/ECar.jpg);
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 /* Main Div - contains everything else */
+
 #main {
     display: flex;
     flex-direction: column;
@@ -23,33 +22,126 @@ body{
     min-height: 100vh;
 }
 
-
-#title {
-    font-family: 'Roboto', sans-serif;
-    max-width: 100%;
+#intro {
+    /*font styling */
+    font-family: 'Ubuntu Mono', sans-serif;
+    color: white;
     text-align: center;
-    padding: 1vh 1vh 0vh 1vh;
-    margin-bottom: 1vh;
+    /* Sizing */
     width: 100%;
-    color: white
+    max-width: 960px;
+    /* Borders and Background */
+    background-color: rgba(5, 223, 150, 0.75);
+    border-radius: 20px;
+    /* Spacing and misc */
+    box-sizing: border-box;
+    padding: 20px 20px 0px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+#title{
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
 
 #description {
-    font-family: 'Roboto', sans-serif;
     margin-top: 0;
-    color: white
-}
-
-#surveyContainer{
-    max-width: 75vw;
-    width: 50vw;
-    background-color: blue;
-}
-
-#survey-form{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    max-width: 960px;
     width: 100%;
-    background-color: red;
 }
+
+#survey-form {
+    /* font styling */
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.5rem;
+    color: white;
+    /* sizing */
+    max-width: 960px;
+    width: 100%;
+    /* Display format */
+    display: flex;
+    flex-direction: column;
+    /* Borders and Background  */
+    box-sizing: border-box;
+    background-color:  rgba(5, 223, 150, 0.75);
+    padding: 20px 20px 0px 20px;
+    border-radius: 20px;
+}
+
+#formItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* sizing */
+    max-width: 960px;
+    width: 100%;
+    /* Borders and Background  */
+    box-sizing: border-box;
+    margin: 10px;
+    margin-top: 30px;
+
+}
+
+#comments {
+    margin-top: -15px;
+    font-size: 1.5rem;
+    max-width: 960px;
+    width: 95%;
+}
+
+#submit {
+    /* font style */
+    color: white;
+    font-size: 1.5rem;
+    /*Other Tweaks */
+    max-width: 900px;
+    width: 95%;
+    height: 100px;
+    background-color:  rgba(3, 114, 77, 0.75);
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+#submit:hover {
+    background-color:  rgba(1, 65, 43, 0.75);   
+}
+
+label, .pForm{
+    /* display settings */
+    display: flex;
+    justify-items: center;
+    /* text settings */
+    text-align: left;
+    font-weight: bold;
+    /* sizing */
+    max-width: 900px;
+    width: 95%;
+    padding: 0px 0px 0px 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=email], input[type=number], select{
+    /* Display settings */
+    align-self: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding-top: 5px;
+    /* sizing */
+    max-width: 900px;
+    width: 95%;
+}
+
+input[type=radio], input[type=checkbox]{
+    justify-self: center;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    height: 1.5rem;
+    width: 5%;
+}
+
+
